@@ -19,7 +19,7 @@ async function broadcast() {
     signer
   );
 
-  let txn = await myContract.set(1313);
+  let txn = await myContract.set(13);
   await txn.wait();
 
   myContract['get'].staticCall().then(result => {
